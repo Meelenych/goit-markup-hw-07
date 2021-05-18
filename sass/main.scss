@@ -50,11 +50,11 @@ body {
 }
 
 .list {
-  list-style: none;
+  -style: none;
   margin: 0;
   padding-left: 0;
 }
-.address {
+.footer__address {
   font-style: inherit;
 }
 
@@ -110,7 +110,7 @@ img {
   background-color: var(--alt-text-cl);
   border-bottom: 1px solid #ececec;
 }
-.header-text {
+.menu {
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.02em;
@@ -127,7 +127,7 @@ img {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-.header-logo {
+.header__logo {
   margin-top: 24px;
   margin-right: 93px;
   margin-bottom: 25px;
@@ -147,16 +147,16 @@ img {
   margin-left: auto;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.menu-item {
+.menu__item {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.phone-email > .menu-item > a {
+.phone-email > .menu__item > a {
   display: inline-flex;
   align-items: center;
 }
@@ -179,8 +179,8 @@ img {
 
 .phone,
 .e-mail,
-.client-svg,
-.client-svg-tile {
+.clients__image,
+.clients__tile {
   fill: currentColor;
   color: currentColor;
 }
@@ -208,7 +208,7 @@ img {
   background-position: center;
 }
 
-.big {
+.hero__title {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.4;
@@ -219,7 +219,7 @@ img {
 }
 
 /*Кнопка заказа услуги*/
-.service {
+.service__button {
   color: var(--alt-text-cl);
   background-color: var(--accent-cl);
   display: block;
@@ -231,8 +231,8 @@ img {
   fill: var(--alt-text-cl);
 }
 
-.service:hover,
-.subscribe-button:hover {
+.service__button:hover,
+.subscribe__button:hover {
   animation: scale 1.5s ease-in-out;
 }
 
@@ -254,29 +254,29 @@ img {
 }
 /*Преимущества*/
 
-.section-advantages {
+.advantages {
   padding-top: 94px;
 }
 
-.advantages {
+.advantages__title {
   text-transform: uppercase;
   color: var(--title-cl);
   font-size: 14px;
   padding-bottom: 10px;
 }
 
-.advantage-list {
+.advantages {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
 }
 
-.advantage-card {
+.advantages__card {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
 }
 
-.adv-svg-tile {
+.advantages__svg-tile {
   width: 270px;
   height: 120px;
   background: #f5f4fa;
@@ -293,7 +293,7 @@ img {
   padding-bottom: 94px;
 }
 
-.title2 {
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -314,7 +314,7 @@ img {
   margin-right: 30px;
 }
 
-.activity-name {
+.activities__name {
   text-transform: uppercase;
   color: var(--alt-text-cl);
   font-weight: 700;
@@ -323,7 +323,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.gradient {
+.activities__gradient {
   background-image: linear-gradient(
     to top,
     rgba(47, 48, 58, 0.8),
@@ -347,14 +347,14 @@ img {
   padding-bottom: 94px;
 }
 
-.team-list {
+.team__list {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
   margin-top: -30px;
 }
 
-.team-card {
+.team__card {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
   margin-top: 30px;
@@ -364,18 +364,18 @@ img {
   background-color: var(--alt-text-cl);
 }
 
-.team-photo {
+.team__photo {
   margin-left: auto;
   margin-right: auto;
 }
 
-.team-card-text {
+.team__text {
   padding-top: 30px;
   word-wrap: normal;
   margin-bottom: 16px;
 }
 
-.team-names {
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -384,20 +384,20 @@ img {
   margin-bottom: 10px;
   text-align: center;
 }
-.team-position {
+.team__position {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
 }
 
-.team-contacts {
+.team__contacts {
   display: flex;
   padding-bottom: 30px;
   justify-content: center;
 }
 
-.team-social {
+.team__contacts__social {
   fill: #afb1b8;
 
   transition-property: fill, background-color;
@@ -406,7 +406,7 @@ img {
   transition-delay: 0;
 }
 
-.team-link {
+.team__contacts__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -422,25 +422,25 @@ img {
   transition-delay: 0;
 }
 
-.team-link:hover,
-.team-link:focus {
+.team__contacts__link:hover,
+.team__contacts__link:focus {
   background-color: var(--accent-cl);
 }
 
-.team-link:hover .team-social,
-.team-link:focus .team-social {
+.team__contacts__link:hover .team__contacts__social,
+.team__contacts__link:focus .team__contacts__social {
   fill: var(--alt-text-cl);
 }
 
 /*Клиенты*/
 
-.section-clients {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
   color: #afb1b8;
 }
 
-.clients {
+.clients__list {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
@@ -454,11 +454,11 @@ img {
   justify-content: center;
 }
 
-.client-svg {
+.clients__image {
   fill: currentColor;
 }
 
-.client-svg-tile {
+.clients__tile {
   border: 1px solid currentColor;
   border-radius: 4px;
   width: 170px;
@@ -481,11 +481,11 @@ img {
   padding-top: 60px;
 }
 
-.foter-content {
+.footer__content {
   display: flex;
 }
 
-.address-block {
+.footer__address-block {
   margin-right: 70px;
 }
 .address-white {
@@ -502,13 +502,13 @@ img {
 }
 
 /*Соцсети*/
-.contact-links {
+.connect {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.connect {
+.connect__call {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.14;
@@ -518,11 +518,11 @@ img {
   margin-top: 12px;
 }
 
-.links-list {
+.team__contacts__list {
   display: inline-flex;
 }
 
-.studio-link {
+.connect__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -532,8 +532,8 @@ img {
   margin-right: 10px;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.studio-link:hover,
-.studio-link:focus {
+.connect__link:hover,
+.connect__link:focus {
   background-color: var(--accent-cl);
 
   transition-property: background-color;
@@ -542,7 +542,7 @@ img {
   transition-delay: 0;
 }
 
-.studio-social {
+.connect__social {
   fill: var(--alt-text-cl);
 }
 
@@ -561,14 +561,14 @@ img {
   justify-content: center;
 }
 
-.input-email {
+.subscribe__email {
   width: 358px;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--dark-bg);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  portfolio__filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   font-size: 16px;
   line-height: 1.25;
@@ -577,7 +577,7 @@ img {
   margin-right: 12px;
 }
 
-.subscribe-button {
+.subscribe__button {
   color: var(--alt-text-cl);
   background-color: var(--accent-cl);
   min-height: 50px;
@@ -587,7 +587,7 @@ img {
 .subscribe-txt {
   margin-left: 7px;
 }
-.subscribe-button > svg {
+.subscribe__button > svg {
   margin-left: 10px;
   vertical-align: middle;
 }
@@ -623,7 +623,7 @@ img {
   max-width: 100%;
 }
 
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -633,7 +633,7 @@ img {
   margin-bottom: 12px;
 }
 
-.modal-close-btn {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -647,12 +647,12 @@ img {
   justify-content: center;
 }
 
-.close-svg {
+.modal__close-svg {
   fill: #000000;
 }
 
-.modal-close-btn:hover .close-svg,
-.modal-close-btn:focus .close-svg {
+.modal__close-btn:hover .modal__close-svg,
+.modal__close-btn:focus .modal__close-svg {
   fill: var(--accent-cl);
 
   transition-property: fill;
@@ -661,12 +661,12 @@ img {
   transition-delay: 0;
 }
 
-.inputs {
+.modal__inputs {
   position: relative;
   margin-bottom: 10px;
 }
 
-.input-box {
+.modal__input-box {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -675,7 +675,7 @@ img {
   padding-left: 42px;
 }
 
-.input-icon {
+.modal__input-icon {
   fill: currentColor;
   position: absolute;
   fill: var(--title-cl);
@@ -684,7 +684,7 @@ img {
   transform: translatey(-50%);
 }
 
-input:focus + .input-icon {
+input:focus + .modal__input-icon {
   fill: var(--accent-cl);
 
   transition-property: fill;
@@ -788,7 +788,7 @@ label {
   margin-left: 124px;
 }
 
-.input-box:valid {
+.modal__input-box:valid {
   color: var(--accent-cl);
 }
 
@@ -804,28 +804,28 @@ input:invalid {
 }
 
 /*Portfolio*/
-.section-portfolio {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 /*Фильтры*/
 
-.filter {
+.portfolio__filter {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
 }
-.filter > li {
+.portfolio__filter > li {
   margin-right: 8px;
 }
-.filter :last-child {
+.portfolio__filter :last-child {
   margin-right: 0;
 }
 
 /*Проекты*/
 
-.project-name {
+.projects__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -834,7 +834,7 @@ input:invalid {
   text-align: left;
 }
 
-.project-type {
+.projects__type {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -849,29 +849,29 @@ input:invalid {
   margin-top: -30px;
 }
 
-.project-item {
+.projects__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.project-item:hover,
-.project-item:focus {
+.projects__item:hover,
+.projects__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.label {
+.projects__label {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
 
-.project-item:hover .overlay {
+.projects__item:hover .projects__overlay {
   transform: translatey(0);
 }
 
-.overlay {
+.projects__overlay {
   display: none;
   position: absolute;
   background: rgba(33, 150, 243, 0.9);
@@ -893,7 +893,7 @@ input:invalid {
   align-items: center;
 }
 
-.overflow {
+.projects__overflow {
   position: relative;
   overflow: hidden;
 }
