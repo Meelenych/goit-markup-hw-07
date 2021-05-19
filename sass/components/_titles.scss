@@ -1,0 +1,26 @@
+.hero__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--alt-text-cl);
+  }
+
+  .advantages__title {
+    text-transform: uppercase;
+    color: var(--title-cl);
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+
+  .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-cl);
+    margin-bottom: 50px;
+  }

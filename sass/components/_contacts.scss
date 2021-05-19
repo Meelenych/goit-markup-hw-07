@@ -1,0 +1,21 @@
+.contacts {
+    color: inherit;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+  
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .contacts__item {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .contacts__link {
+    display: inline-flex;
+    align-items: center;
+  }
+  

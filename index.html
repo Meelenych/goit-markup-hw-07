@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
 
+<!-- Шрифты-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    />
+    /> 
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <!--Шапка сайта-->
@@ -72,7 +73,7 @@
     <!--Мэйн-->
     <main>
       <!--Секция-герой-->
-      <section class="hero">
+      <section class="hero hero--background">
         <div class="container">
           <h1 class="hero__title">
             Эффективные решения <br />
@@ -150,19 +151,19 @@
                 alt="персональный компьютер"
                 width="370"
               />
-              <div class="activities__gradient">
+              <div class="activities--gradient">
                 <p class="activities__name">Десктопные приложения</p>
               </div>
             </li>
             <li class="activities__item">
               <img src="./images/laptop.jpg" alt="ноутбук" width="370" />
-              <div class="activities__gradient">
+              <div class="activities--gradient">
                 <p class="activities__name">Мобильные приложения</p>
               </div>
             </li>
             <li class="activities__item">
               <img src="./images/tablet.jpg" alt="планшет" width="370" />
-              <div class="activities__gradient">
+              <div class="activities--gradient">
                 <p class="activities__name">Дизайнерские решения</p>
               </div>
             </li>
@@ -684,6 +685,7 @@
                 placeholder="Введите текст"
               ></textarea>
             </div>
+            <!--Чекбокс-->
             <div class="chk-div">
               <input
                 class="checkbox visually-hidden"
@@ -691,15 +693,20 @@
                 name="user-checkbox"
                 id="checkbox"
               />
+
               <label class="chk-lbl" for="checkbox">
-                 <!-- <svg width="11px" height="8px" class="chk">
+
+                <svg width="11px" height="8px" class="chk">
                   <use href="./images/icons.svg#check"></use>
-                </svg> -->
+                </svg>
+
                 <span class="agreement">
                   Соглашаюсь с рассылкой и принимаю
                   <a href="#" class="link-agreement">Условия договора </a>
                 </span>
+
               </label>
+
             </div>
             <button type="submit" class="subscribe__button btn send-btn">
               Отправить

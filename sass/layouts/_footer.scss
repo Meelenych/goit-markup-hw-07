@@ -1,0 +1,33 @@
+/*Футер*/
+.footer {
+    background: var(--dark-bg);
+    color: rgba(255, 255, 255, 0.6);
+    height: 252px;
+    padding-top: 60px;
+  }
+  
+  .footer__content {
+    display: flex;
+  }
+  
+  .footer__address-block {
+    margin-right: 70px;
+  }
+  .address-white {
+    color: var(--alt-text-cl);
+    margin-top: 20px;
+  }
+  
+  .footer-mail {
+    margin-top: 9px;
+  }
+  
+  .footer-phone {
+    margin-top: 9px;
+  }
+  
+  .footer__address {
+    font-style: inherit;
+  }
+  
+  

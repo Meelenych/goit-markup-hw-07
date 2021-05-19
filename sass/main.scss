@@ -1,0 +1,30 @@
+@import "./utils/variables";
+
+@import "./base/fonts";
+@import "./base/common";
+@import "./base/container";
+
+@import "./components/logo";
+@import "./components/buttons";
+@import "./components/contacts";
+@import "./components/contacts-svg";
+@import "./components/titles";
+@import "./components/modal";
+@import "./components/modal-inputs";
+
+@import "./layouts/header";
+@import "./layouts/menu";
+@import "./layouts/sections";
+@import "./layouts/hero";
+@import "./layouts/advantages";
+@import "./layouts/activities";
+@import "./layouts/team-cards";
+@import "./layouts/team-contacts";
+@import "./layouts/clients";
+@import "./layouts/footer";
+@import "./layouts/studio-contacts";
+@import "./layouts/studio-subscribrion";
+
+@import "./layouts/portfolio";
+@import "./layouts/portfolio-filters";
+@import "./layouts/portfolio-projects";

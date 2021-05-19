@@ -1,0 +1,37 @@
+/*Подписка*/
+  .subscribe {
+    display: block;
+    margin-left: 93px;
+  }
+  
+  .subscribe > input,
+  .subscribe > button,
+  .subscribe > form {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .subscribe__email {
+    width: 358px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--dark-bg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    padding-left: 16px;
+    margin-right: 12px;
+  }
+    
+  .subscribe-txt {
+    margin-left: 7px;
+  }
+  .subscribe__button > svg {
+    margin-left: 10px;
+    vertical-align: middle;
+  }

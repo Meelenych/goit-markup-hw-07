@@ -1,0 +1,125 @@
+.modal__inputs {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .modal__input-box {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 42px;
+  }
+  
+  .modal__input-icon {
+    fill: currentColor;
+    position: absolute;
+    fill: var(--title-cl);
+    left: 15px;
+    top: 50%;
+    transform: translatey(-50%);
+  }
+  
+  input:focus + .modal__input-icon {
+    fill: var(--accent-cl);
+  
+    transition-property: fill;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border: 1px solid var(--accent-cl);
+  
+    transition-property: border;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
+  
+  textarea {
+    resize: none;
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.17px;
+    letter-spacing: 0.01em;
+  }
+  
+  .txt-area {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .agreement {
+    text-decoration: none;
+  }
+  
+  .link-agreement {
+    color: var(--accent-cl);
+  }
+  
+  label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
+  
+  
+  /*Чекбокс*/
+    .chk-div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+     
+    .chk {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 15px;
+    fill: var(--alt-text-cl);
+    }
+  
+    .chk-lbl {
+    display: flex;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+  
+    .chk-lbl::before {
+    display: flex;
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-cl);
+    border-radius: 2px;
+    margin-right: 8px;
+  }
+
+    .checkbox:checked + .chk-lbl::before {
+    background-color: var(--accent-cl);
+    border: 2px solid var(--accent-cl);
+    border-radius: 2px;
+    
+    }
+
+  /*Валидация форм*/
+    
+  .modal__input-box:valid {
+    color: var(--accent-cl);
+  }
+  
+  input:invalid {
+    color: rgb(241, 79, 79);
+  }
+  
+  
