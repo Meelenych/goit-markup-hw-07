@@ -1,19 +1,17 @@
-
 .logo {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: #2196f3;
-  }
-  
-  .studio-black {
-    color: black;
-  }
-  
-  .studio-white {
-    color: var(--alt-text-cl);
-  }
-  
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--logo-blue);
+}
+ 
+.studio-black {
+  color: var(--logo-black);
+}
+ 
+.studio-white {
+  color: var(--alt-text-cl);
+}  

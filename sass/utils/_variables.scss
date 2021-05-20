@@ -1,13 +1,23 @@
 :root {
-    --main-text-cl: #757575;
-    --title-cl: #212121;
-    --accent-cl: #2196f3;
-    --alt-text-cl: #ffffff;
-  
-    --dark-bg: #2f303a;
-    --second-bg: #e5e5e5;
-    --btn-bg: #f5f4fa;
-  
-    --main-font: "Roboto", sans-serif;
-    --title-font: "Raleway", sans-serif;
-  }
+  --main-font: "Roboto", sans-serif;
+  --title-font: "Raleway", sans-serif;
+
+  --main-text-cl: #757575;
+  --title-cl: #212121;
+  --accent-cl: #2196f3;
+  --alt-text-cl: #fff;
+  --dark-bg: #2f303a;
+  --second-bg: #e5e5e5;
+  --btn-bg: #f5f4fa;
+  --logo-black: #000;
+  --logo-blue: #2196f3;
+  --border-btm: #ececec;
+  --prj-brdr: #eeeeee;
+  --clients-cl: #afb1b8;
+  --foot-txt: rgba(255, 255, 255, 0.6);
+  --hero-grdnt: rgba(47, 48, 58, 0.4);
+  --act-grdnt: rgba(47, 48, 58, 0.8);
+  --prj-overlay: rgba(32, 148, 243, 0.9);
+  --connect-cl: rgba(255, 255, 255, 0.1);
+  --subscribe-brdr: rgba(255, 255, 255, 0.3);
+}

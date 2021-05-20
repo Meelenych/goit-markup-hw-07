@@ -1,13 +1,13 @@
-  .contacts__svg {
-    display: inline-flex;
-    align-items: center;
-    fill: var(--main-text-cl);
-    margin-right: 10px;
-  }
-  
-  .contacts__svg,
-  .clients__image,
-  .clients__tile {
-    fill: currentColor;
-    color: currentColor;
-  }
+.contacts__svg {
+  display: inline-flex;
+  align-items: center;
+  fill: var(--main-text-cl);
+  margin-right: 10px;
+}
+ 
+.contacts__svg,
+.clients__image,
+.clients__tile {
+  fill: currentColor;
+  color: currentColor;
+}

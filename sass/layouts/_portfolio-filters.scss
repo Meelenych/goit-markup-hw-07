@@ -1,14 +1,14 @@
 /*Фильтры*/
 .portfolio__filter {
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
 
-  }
-  .portfolio__filter > li {
-    margin-right: 8px;
-  }
-  
-  .portfolio__filter :last-child {
-    margin-right: 0;
-  }
+.portfolio__filter > li {
+  margin-right: 8px;
+}
+ 
+.portfolio__filter:last-child {
+  margin-right: 0;
+}

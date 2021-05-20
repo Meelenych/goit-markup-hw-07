@@ -1,33 +1,32 @@
-    /*Герой*/
-    .hero {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    }
+/*Герой*/
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+     
+/*Преимущества*/
+.advantages {
+  padding-top: 94px;
+}
 
-      
-  /*Преимущества*/
-    .advantages {
-    padding-top: 94px;
-  }
+/*Что делаем*/
+.activities {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
-  /*Что делаем*/
-    .activities {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-
-  /*Команда*/
-    .team {
-    background-color: var(--btn-bg);
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+/*Команда*/
+.team {
+  background-color: var(--btn-bg);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
   
-  /*Клиенты*/
-    .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    color: #afb1b8;
-  }
+/*Клиенты*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  color: var(--clients-cl);
+}

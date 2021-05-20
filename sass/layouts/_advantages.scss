@@ -1,21 +1,21 @@
-.advantages {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
-  }
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
   
-  .advantages__card {
-    flex-basis: calc(100% / 4 - 30px);
-    margin-right: 30px;
-  }
+.advantages__card {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
+}
   
-  .advantages__svg-tile {
-    width: 270px;
-    height: 120px;
-    background: #f5f4fa;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-  }
+.advantages__svg-tile {
+  width: 270px;
+  height: 120px;
+  background: var(--btn-bg);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}

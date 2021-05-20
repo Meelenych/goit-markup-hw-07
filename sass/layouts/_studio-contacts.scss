@@ -1,44 +1,43 @@
 /*Соцсети*/
 .connect {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  
-  .connect__call {
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1.14;
-    color: var(--alt-text-cl);
-    margin-bottom: 20px;
-    display: flex;
-    margin-top: 12px;
-  }
-  
-  .connect__list {
-    display: inline-flex;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.connect__call {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  color: var(--alt-text-cl);
+  margin-bottom: 20px;
+  display: flex;
+  margin-top: 12px;
+}
+ 
+.connect__list {
+  display: inline-flex;
+}
     
-  .connect__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  .connect__link:hover,
-  .connect__link:focus {
-    background-color: var(--accent-cl);
-  
-    transition-property: background-color;
-    transition-duration: 500ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
-  }
-  
-  .connect__social {
-    fill: var(--alt-text-cl);
-  }
+.connect__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: var(--connect-cl);
+}
+
+.connect__link:hover,
+.connect__link:focus {
+  background-color: var(--accent-cl);
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect__social {
+  fill: var(--alt-text-cl);
+}
