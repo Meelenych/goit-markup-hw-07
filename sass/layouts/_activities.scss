@@ -9,6 +9,7 @@
   flex-basis: calc((100% - 30px * 3) / 3);
   margin-left: 30px;
   margin-top: 30px;
+  position: relative;
   }
   
 .activities__name {
@@ -27,9 +28,11 @@
     var(--act-grdnt));
   width: 370px;
   height: 70px;
-  position: relative;
-  bottom: 70px;
+
+  position: absolute;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }

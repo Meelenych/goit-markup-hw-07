@@ -719,6 +719,7 @@ input:invalid {
       flex-basis: calc((100% - 30px * 3) / 3);
   margin-left: 30px;
   margin-top: 30px;
+  position: relative;
 }
 
 .activities__name {
@@ -735,8 +736,8 @@ input:invalid {
   background-image: linear-gradient(to top, var(--act-grdnt), var(--act-grdnt));
   width: 370px;
   height: 70px;
-  position: relative;
-  bottom: 70px;
+  position: absolute;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
