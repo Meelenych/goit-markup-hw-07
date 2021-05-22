@@ -6,8 +6,8 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition-duration: 1500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  @extend %background-effects;
 }
   
 .modal {
@@ -27,38 +27,6 @@
   padding: 40px;
 }
   
-.modal__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  color: var(--title-cl);
-  letter-spacing: 0.03em;
-  margin-bottom: 12px;
-}
-  
-.modal__close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: var(--alt-text-cl);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
-  
 .modal__close-svg {
   fill: var(--logo-black);
-}
-  
-.modal__close-btn:hover .modal__close-svg,
-.modal__close-btn:focus .modal__close-svg {
-  fill: var(--accent-cl);
-  transition-property: fill;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

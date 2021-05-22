@@ -21,21 +21,19 @@
   transform: translatey(-50%);
 }
   
-input:focus + .modal__input-icon {
-  fill: var(--accent-cl);
-  transition-property: fill;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+input {
+
+  &:focus {
+    border: 1px solid var(--accent-cl);
+    @extend %border-effects;
+  }
+
+  &:focus + .modal__input-icon {
+    fill: var(--accent-cl);
+    @extend %fill-effects;
+  }
 }
-  
-input:focus,
-textarea:focus {
-  border: 1px solid var(--accent-cl);
-  transition-property: border;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
- 
+   
 textarea {
   resize: none;
   width: 448px;
@@ -46,8 +44,13 @@ textarea {
   font-size: 12px;
   line-height: 1.17px;
   letter-spacing: 0.01em;
+
+  &:focus {
+    border: 1px solid var(--accent-cl);
+    @extend %border-effects;
+  }
 }
- 
+
 .txt-area {
   display: flex;
   margin-bottom: 20px;
@@ -88,16 +91,16 @@ label {
   display: flex;
   font-size: 14px;
   letter-spacing: 0.03em;
-}
- 
-.chk-lbl::before {
-  display: flex;
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--title-cl);
-  border-radius: 2px;
-  margin-right: 8px;
+  
+  &::before {
+    display: flex;
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-cl);
+    border-radius: 2px;
+    margin-right: 8px;
+  }
 }
 
 .checkbox:checked + .chk-lbl::before {

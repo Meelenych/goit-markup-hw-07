@@ -9,17 +9,16 @@
   padding: 6px 22px 6px 22px;
   font-weight: 500;
   min-height: 38px;
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.btn:hover,
-.btn:focus {
-  color: var(--alt-text-cl);
-  background-color: var(--accent-cl);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+  @extend %btn-effects;
+
+  &:hover,
+  &:focus {
+    color: var(--alt-text-cl);
+    background-color: var(--accent-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
  
 /*Кнопка заказа услуги*/
@@ -33,13 +32,26 @@
   min-width: 200px;
   margin-top: 30px;
   fill: var(--alt-text-cl);
+ 
+  &:hover {
+    animation: scale 1.5s ease-in-out;
+  }
 }
  
-.service__button:hover,
-.subscribe__button:hover {
-  animation: scale 1.5s ease-in-out;
+
+/*Кнопка подписки*/
+.subscribe__button {
+  color: var(--alt-text-cl);
+  background-color: var(--accent-cl);
+  min-height: 50px;
+  min-width: 200px;
+  fill: var(--alt-text-cl);
+
+  &:hover {
+    animation: scale 1.5s ease-in-out;
+  }
 }
- 
+
 @keyframes scale {
   5% {
   transform: scale(1);
@@ -52,15 +64,28 @@
   }
 }
 
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--alt-text-cl);
+  border: 1px solid var(--mdl-btn-brdr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & :hover .modal__close-svg,
+    :focus .modal__close-svg {
+    fill: var(--accent-cl);
+
+    @extend %fill-effects;
+  }
+}
+
 .send-btn {
   margin-right: 124px;
   margin-left: 124px;
-}
-
-.subscribe__button {
-  color: var(--alt-text-cl);
-  background-color: var(--accent-cl);
-  min-height: 50px;
-  min-width: 200px;
-  fill: var(--alt-text-cl);
 }

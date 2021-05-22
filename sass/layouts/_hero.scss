@@ -1,11 +1,11 @@
 .hero--background{
   background: var(--dark-bg);
   background-image: linear-gradient(
-  to bottom,
- var(--hero-grdnt),
- var(--hero-grdnt)),
-  url("../images/herobg.jpg");
-  max-width: 100%;
+    to bottom,
+    var(--hero-grdnt),
+    var(--hero-grdnt)),
+    url("../images/herobg.jpg");
+   max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }

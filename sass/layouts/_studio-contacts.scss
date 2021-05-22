@@ -28,14 +28,13 @@
   border-radius: 50%;
   margin-right: 10px;
   background-color: var(--connect-cl);
-}
 
-.connect__link:hover,
-.connect__link:focus {
-  background-color: var(--accent-cl);
-  transition-property: background-color;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
+
+    @extend %background-effects;
+  }
 }
 
 .connect__social {

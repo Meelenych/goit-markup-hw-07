@@ -1,0 +1,29 @@
+%color-effects {
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%background-effects {
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%fill-effects {
+  transition-property: fill;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%btn-effects {
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%border-effects {
+    transition-property: border;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

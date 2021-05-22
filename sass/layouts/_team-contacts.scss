@@ -9,10 +9,11 @@
 }
   
 .team__contacts__social {
-  fill: #afb1b8;
-  transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--clients-cl);
+
+  @extend %fill-effects;
+  @extend %background-effects;
+
 }
 
 .team__contacts__link {
@@ -25,17 +26,16 @@
   margin-right: 10px;
   background-color: var(--connect-cl);
   
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
+  }
+    
+  &:hover .team__contacts__social,
+  &:focus .team__contacts__social {
+    fill: var(--alt-text-cl);
+  }
+
+  @extend %background-effects;
   
-.team__contacts__link:hover,
-.team__contacts__link:focus {
-  background-color: var(--accent-cl);
-}
-  
-.team__contacts__link:hover .team__contacts__social,
-.team__contacts__link:focus .team__contacts__social {
-  fill: var(--alt-text-cl);
 }
